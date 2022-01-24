@@ -98,6 +98,7 @@ android_library {
         "kotlin-stdlib",
         "vendor.lineage.fastcharge-V1.0-java",
         "VendorSupport-preference",
+        "columbus-settingsgoogle",
         "faceunlock_framework",
     ],
 
@@ -174,4 +175,10 @@ android_library_import {
 android_library_import {
     name: "glide",
     aars: ["libs/glide-4.9.0.aar"],
+}
+
+java_import {
+    name: "columbus-settingsgoogle",
+    jars: ["libs/columbus-settings.jar"],
+    sdk_version: "current",
 }
